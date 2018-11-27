@@ -45,7 +45,9 @@ namespace DiscsMFAK
 
             Velocity.Add(Acceleration);
             Velocity.Limit(MaxSpeed);
+            // Dodać krok czasowy
             Location.Add(Velocity);
+            
 
             CheckEdges(width,height, left, top);
 

@@ -18,6 +18,7 @@ namespace DiscsMFAK
         private Color[] _colors;
         private Liquid liquid;
         private Attractor attractor;
+        private float dt;
 
         public MainForm()
         {
@@ -34,6 +35,7 @@ namespace DiscsMFAK
         private void InitializeTimer()
         {
             timer.Interval = 10;
+            dt = timer.Interval;
             timer.Start();
         }
 
